@@ -1,0 +1,18 @@
+.name,
+a.badge.label.name {
+    background-color: #FFD813;                                    // Hintergrundfarbe
+    color: #C80A14;                                                 // Schriftfarbe 
+    width: 341px;                                                   // Komplette Breite des Labels
+    font-weight: bold;                                              // Schrift Fett
+    &::before {
+        background-image: URL(/images/labels/your_picture.png);     //Bild URL einfügen
+        background-repeat: no-repeat;                               // nicht wiederholen
+        width: 100px;                                               // Breite anpassen
+        height: 42px;                                               // Höhe anpassen
+        margin-right: 5px;                                          // Abstand zum Text
+        margin-left: 5px;                                           // Abstand zum Rand aussen
+        content: "";                                                // Content - leer lassen
+        display: inline-block;                                      // 
+        vertical-align: middle;                                     // vertikale Ausrichtung mittig
+    }
+}
